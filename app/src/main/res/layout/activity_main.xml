@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select to Rate "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/dog_button"
+        android:layout_width="174dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openSecondActivity"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/cat_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/dog" />
+
+    <ImageButton
+        android:id="@+id/cat_button"
+        android:layout_width="174dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openSecondActivity"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dog_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageButton
+        android:id="@+id/bear_button"
+        android:layout_width="174dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openSecondActivity"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/rabbit_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogRating"
+        app:srcCompat="@drawable/bear" />
+
+    <ImageButton
+        android:id="@+id/rabbit_button"
+        android:layout_width="174dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="openSecondActivity"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bear_button"
+        app:layout_constraintTop_toBottomOf="@+id/catRating"
+        tools:src="@drawable/rabbit" />
+
+    <TextView
+        android:id="@+id/dogRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog_button" />
+
+    <TextView
+        android:id="@+id/catRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="90dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cat_button" />
+
+    <TextView
+        android:id="@+id/bearRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bear_button" />
+
+    <TextView
+        android:id="@+id/rabbitRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="90dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rabbit_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
